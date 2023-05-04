@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+.logo {
+	width: 100%;
+	height: 50px;
+}
+
+.logo img{
+	margin-top: 15px;
+	margin-right: 50%;
+	margin-left: 50%;
+}
+
+.main{
+	display: inline-flex;
+	width: 100%;
+	height: 1000px;
+	background: #F1F2F4;
+}
+
+.main .leftSidebar{
+	display: flex;
+	margin-left: 4%;
+	padding-top: 4%;
+	width: 15%;
+	height: 800px;
+}
+
+.main .leftSidebar .menu ul{
+	list-style: none;
+	font-family: "Work Sans";
+	font-weight: 550;
+	font-size: 24px;
+}
+
+.main .leftSidebar .menu ul li{
+	padding-bottom: 15px;
+}
+
+.main .leftSidebar .menuBottom{
+	align-self: flex-end;
+	margin-left: -35%;
+}
+
+.main .center{
+	width: 45%;
+	height: 500px;
+	padding-top: 15%;
+	line-height: 5em;
+}
+
+.main .center h3{
+	font-family: "Work Sans";
+	color: #727a82;
+	font-weight: 400;
+}
+
+.main .center h1{
+	font-family: "Anton";
+	letter-spacing: 5px;
+	font-size: 128px;
+}
+
+.button{
+	max-width: 256px;
+	background: black;
+	display: flex;
+}
+
+.button p{
+	font-family: "Work Sans";
+	color: white;
+	max-width: 225px;
+	margin-left: 13%;
+	letter-spacing: 1px;
+}
+
+.main .center .button{
+	margin-top: 9%;
+}
+
+.main .mainimg{
+	width: 30%;
+	height: 100%;
+}
+
+.main .mainimg #diag1{
+	position: absolute;
+	margin-left: -23%;
+}
+
+.main .mainimg #mainimg1{
+	position: absolute;
+	z-index: 1;
+	margin-left: -19%;
+	margin-top: 3%;
+}
+
+.main .mainimg #diag2{
+	position: absolute;
+	margin-top: 35%;
+	margin-left: 1%;
+}
+
+.main .rightSidebar{
+	display: flex;
+	width: 10%;
+	font-family: "Work Sans";
+}
+
+.main .rightSidebar .utils{
+	padding-top: 30%;
+}
+
+.main .rightSidebar .utils ul li{
+	padding-bottom: 30px;
+}
+
+.main .rightSidebar .smm{
+	align-self: flex-end;
+	padding-bottom: 70%;
+	margin-left: -50%;
+}
+
+.main .rightSidebar .smm ul li{
+	padding-bottom: 30px;
+}
+
+.bestsellers{
+	width: 100%;
+	height: 1080px;
+	font-family: "Work Sans";
+	margin-top: 8%;
+	margin-left: 4%;
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 2%;
+	justify-content: space-between;
+}
+
+.header span{
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+	margin-right: 15%;
+}
+
+.bestsellers .items table tr td{
+	padding-right: 150px;
+}
+
+.bestsellers .collection{
+	padding-top: 7%;
+	display: inline-flex;
+}
+
+.bestsellers .collection #diag3{
+	width: 850px;
+	max-height: 370px;
+	z-index: 1;
+}
+
+.bestsellers .collection .collectionAbout .collectionAbout2{
+	position: absolute;
+	width:650px;
+	height: 220px;
+	background-color: white;
+	margin-top: -17%;
+	padding-left: 5%;
+	padding-top: 2%;
+}
+
+.bestsellers .collection .collectionAbout .collectionAbout2 span{
+	color: #727a82;
+}
+.bestsellers .collection .collectionAbout .collectionAbout2 h2{
+	padding-top: 10px;
+	font-size: 36px;
+}
+
+.bestsellers .collection .collectionAbout .button{
+	margin-top: 30px;
+	max-width: 180px;
+	padding-left: 7%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.categories{
+	font-family: "Work Sans";
+	font-weight: 500;
+	margin-left: 4% ;
+}
+
+.categories .header span{
+	margin-right: %;
+}
+
+.categories .items2{
+	display: flex;
+}
+
+.categories .items2 .item{
+	display: flex;
+	flex-direction: column;
+	padding-right: 8%;
+}
