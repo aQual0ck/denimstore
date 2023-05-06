@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	font-family: "Work Sans";
+}
+
+ul{
+	list-style: none;
+}
+
+.top{
+	width: 100%;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+}
+
+.top #menu{
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 30%;
+}
+
+.top #menu li{
+	display: inline-block;
+	padding-right: 10%;
+}
+
+.top #logo{
+	display: flex;
+	align-self: center;
+	width: 30%;
+	object-fit: scale-down;
+}
+
+.top .utils{
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: flex-end;
+}
+
+.top .utils img{
+	padding-right: 10%;
+}
+
+.banner{
+	width: 100%;
+	display: flex;
+	height: 500px;
+	background: #F1F2F4;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner .bannerwrap{
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	width: 90%;
+}
+
+.banner .bannerwrap .about{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+}
+
+.banner .bannerwrap .about #textwrap{
+	color: #727A82;
+	padding-bottom: 10%;
+}
+
+.banner .bannerwrap .about #text{
+	color: black;
+}
+
+.banner .bannerwrap .about span{
+	font-size: 26px;
+}
+
+.banner .bannerwrap .about h1{
+	font-size: 42px;
+}
+
+.banner .bannerwrap .bannerimg{
+	display: flex;
+	width: 40%;
+}
+
+.banner .bannerwrap .bannerimg #mainimg{
+	height: 500px;
+	z-index: 1;
+}
+
+.banner .bannerwrap .bannerimg #diag1{
+	position: absolute;
+	margin-left: 9%;
+	height: 350px;
+}
+
+.banner .bannerwrap .bannerimg #diag2{
+	position: absolute;
+	margin-left: -3.5%;
+	margin-top: 12.4%;
+}
+
+.everything{
+	width: 100%;
+}
+
+.everything .filter{
+	width: 90%;
+	display: flex;
+	height: 200px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.everything .filter .filterButton{
+	display: flex;
+	border: 3px solid;
+	width: 20%;
+	height: 35%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.everything .filter .filterButton span{
+	padding-left: 10%;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.everything .filter .filterButton img{
+	padding-right: 10%;
+}
+
+.everything .filter .filterButton .dropdown{
+	display: none;
+}
+
+.everything .selection{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.everything .selection > div{
+	padding-right: 5%;
+}
+
+.everything .selection .column1 > div{
+	padding-bottom: 24%;
+}
+
+.everything .selection .column1 > div > div{
+	padding-top: 5%;
+	width: 20%;
+	font-weight: 500;
+}
+
+.everything .selection .column1 > div > div > p{
+	padding-top: 20%;
+	font-weight: 600;
+}
+
+.everything .selection .column2 > div{
+	padding-bottom: 24%;
+}
+
+.everything .selection .column2 > div > div{
+	padding-top: 5%;
+	width: 20%;
+	font-weight: 500;
+}
+
+.everything .selection .column2 > div > div > p{
+	padding-top: 20%;
+	font-weight: 600;
+}
+
+.everything .selection .column3 .subcolumn{
+	padding-bottom: 10.5%;
+	display: inline-flex;
+}
+
+.everything .selection .column3 .subcolumn > div{
+	padding-right: 15%;
+}
+
+.everything .selection .column3 .subcolumn > div > div{
+	padding-top: 5%;
+	font-weight: 500;
+}
+
+.everything .selection .column3 .subcolumn > div > div > p{
+	padding-top: 4%;
+	font-weight: 600;
+}
+
+.everything .selection .column3 .bigimg > div{
+	padding-top: 2%;
+	font-weight: 500;
+}
+
+.everything .selection .column3 .bigimg > div > p{
+	padding-top: 2%;
+	font-weight: 600;
+}
+
+.scroller{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 350px;
+}
+
+.scroller > span{
+	display: flex;
+	font-weight: 500;
+	padding-bottom: 0.3%;
+}
+
+.scroller .line{
+	width: 9.1%;
+	height: 3px;
+	background: #E5E5E5;
+	border-radius: 2px;
+}
+
+.scroller .line .line2{
+	width: 25%;
+	height: 3px;
+	background: black;
+	border-radius: 2px;
+}
+
+.scroller .button{
+	display: flex;
+	width: 9.1%;
+	height: 60px;
+	background: black;
+	color: white;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.5%;
+}
+
+.bottom{
+	display: flex;
+	background-color: #151C22;
+	width: 100%;
+	height: 220px;
+	font-family: "Work Sans";
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.bottom table{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.bottom table tr{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 7%;
+}
+
+.bottom table #buttons td{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.bottom table #sm{
+	padding-top: 7%;
+}

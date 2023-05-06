@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>smth2</title>
 	<link rel="stylesheet" type="text/css" href="css/denimstore2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="top">
@@ -18,6 +21,194 @@
 		 	<img src="img/search.png">
 		 	<img src="img/cart.png">
 		 </div>
+	</div>
+	<div class="banner">
+		<div class="bannerwrap">
+			<div class="about">
+				<span id="textwrap"><b>All Categories / Women / </b><span id="text"><b>Jackets</b></span></span>
+				<h1>Denim Collection Fall 2019</h1>
+			</div>
+			<div class="bannerimg">
+				<img src="img/diag.png" id="diag1">
+				<img src="img/collection2.png" id="mainimg">
+				<img src="img/diag.png" id="diag2">
+			</div>
+		</div>
+	</div>
+	<div class="everything">
+		<div class="filter">
+			<div class="filterButton" onclick="dropdown()">
+				<span>Filter by</span>
+				<img src="img/smallarrowdown.png">
+				<div class="dropdown">
+					<div class="usual">
+						<span>Price</span>
+						<img src="img/smallarrowdown.png">
+						<div class="priceslider">
+							<div class="priceline"><div class="priceline2"><div class="circle"></div><div class="circle"></div></div></div>
+						</div>
+					</div>
+					<div class="usual">
+						<span>Color</span>
+						<img src="img/smallarrowdown.png">
+						<div class="colorpicker">
+							<div class="greyishblue"></div>
+							<div class="darkblue"></div>
+							<div class="grey"></div>
+							<div class="black"></div>
+							<div class="bonewhite"></div>
+							<div class="lightblue"></div>
+						</div>
+					</div>
+					<div class="usual">
+						<span>Collection</span>
+						<img src="img/smallarrowdown.png">
+						<div class="collectionpicker">
+							<div class="collectioncolumn1">
+								<span>Casual</span>
+								<span>Classic</span>
+							</div>
+							<div class="collectioncolumn2">
+								<span>Petite</span>
+								<span>Soulluxe</span>
+							</div>
+						</div>
+					</div>
+					<div class="apply">
+						<span>Apply (9 products)</span>
+					</div>
+					<div class="clear">
+						<span>Clear all</span>
+					</div>
+					<script type="text/javascript">
+						function dropdown(){
+							document.getElementByClassName("filterButton").classList.toggle("show");
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="selection">
+			<div class="column1">
+				<div>
+					<img src="img/item9.png">
+					<div>
+					<span>Jacket</span>
+					<p>$ 40</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/item13.png">
+					<div>
+					<span>Jacket</span>
+					<p>$ 40</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/item15.png">
+					<div>
+					<span>Jacket</span>
+					<p>$ 35</p>
+					</div>
+				</div>
+			</div>
+			<div class="column2">
+				<div>
+					<img src="img/item10.png">
+					<div>
+					<span>Jacket</span>
+					<p>$ 79</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/item14.png">
+					<div>
+					<span>Jacket</span>
+					<p>$ 110</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/item16.png">
+					<div>
+					<span>Jacket</span>
+					<p>$ 85</p>
+					</div>
+				</div>
+			</div>
+			<div class="column3">
+				<div class="subcolumn">
+					<div>
+						<img src="img/item11.png">
+						<div>
+						<span>Jacket</span>
+						<p>$ 60</p>
+						</div>
+					</div>
+					<div>
+						<img src="img/item12.png">
+						<div>
+						<span>Jacket</span>
+						<p>$ 50</p>
+						</div>
+					</div>
+				</div>
+					<div class="bigimg">
+						<img src="img/bigitem.png">
+						<div>
+						<span>Jacket</span>
+						<p>$ 160</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="scroller">
+			<span>Showing 9 of 45 items</span>
+			<div class="line"><div class="line2"></div></div>
+			<div class="button">
+				<span>Load more</span>
+			</div>
+		</div>
+		<div class="bottom">
+			<table>
+				<tr id="logo">
+					<td>
+						<img src="img/nimeswhite.png">
+					</td>
+				</tr>
+				<tr id="buttons">
+					<td>
+						<span>Shop</span>
+					</td>
+					<td>
+						<span>Delivery</span>
+					</td>
+					<td>
+						<span>Service</span>
+					</td>
+					<td>
+						<span>Sitemap</span>
+					</td>
+					<td>
+						<span>Contacts</span>
+					</td>
+				</tr>
+				<tr id="sm">
+					<td>
+						<img src="img/fb.png">
+					</td>
+					<td>
+						<img src="img/ig.png">
+					</td>
+					<td>
+						<img src="img/pntrst.png">
+					</td>
+					<td>
+						<img src="img/twitter.png">
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </body>
 </html>
