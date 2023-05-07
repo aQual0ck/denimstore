@@ -1,6 +1,8 @@
 *{
 	margin: 0;
 	font-family: "Work Sans";
+	list-style-type: none;
+	text-decoration: none;
 }
 
 ul{
@@ -12,6 +14,7 @@ ul{
 	height: 75px;
 	display: flex;
 	justify-content: center;
+	font-weight: 550;
 }
 
 .top #menu{
@@ -113,17 +116,19 @@ ul{
 	width: 90%;
 	display: flex;
 	height: 200px;
-	justify-content: flex-end;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
 }
 
 .everything .filter .filterButton{
-	display: flex;
+	display: inline-flex;
 	border: 3px solid;
 	width: 20%;
 	height: 35%;
 	align-items: center;
 	justify-content: space-between;
+	color: black;
 }
 
 .everything .filter .filterButton span{
@@ -134,10 +139,95 @@ ul{
 
 .everything .filter .filterButton img{
 	padding-right: 10%;
+	position: relative;
 }
 
-.everything .filter .filterButton .dropdown{
+.everything .filter #dropdown{
+	width: 18%;
 	display: none;
+	flex-direction: column;
+	border: 3px solid;
+	border-top: none;
+	position: absolute;
+	top: 73.2%;
+	background: white;
+	max-height: 1000px;
+	padding:0;
+}
+
+.everything .filter #dropdown li{
+	align-items: center;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	height: 50px;
+	position: relative;
+}
+
+.everything .filter #dropdown .regular{
+	display: flex;
+	border-bottom: 2px solid;
+	border-color: #cacacc;
+	font-weight: 550;
+	font-size: 20px;
+}
+
+.everything .filter #dropdown .regular a{
+	padding-left: 10%;
+}
+
+.everything .filter #dropdown .apply{
+	display: flex;
+	margin-top: 20%;
+	width: 100%;
+	height: 90px;
+	background-color: black;
+	justify-content: center;
+}
+
+.everything .filter #dropdown .apply a{
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.everything .filter #dropdown .clear{
+	justify-content: center;
+	width:100%;
+	height: 90px;
+	font-size: 20px;
+	font-weight: 550;
+}
+
+.everything .filter #dropdown li a{
+	color: black;
+}
+
+.everything .filter #dropdown li img{
+	margin-right: 10%;
+	object-fit: scale-down;
+}
+
+.everything .filter #dropdown .regular div{
+	display: none;
+}
+
+.everything .filter #dropdown #price{
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.everything .filter #dropdown #price .priceslider{
+	display: none;
+	width: 88%;
+	height: 75px;
+	padding-bottom: 10%;
+	position: absolute;
+	margin-top: 47%;
+}
+
+.everything .filter #dropdown #price .priceslider .linegrey{
+
 }
 
 .everything .selection{

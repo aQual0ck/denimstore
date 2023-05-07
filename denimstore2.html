@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
 	<div class="top">
@@ -37,57 +38,52 @@
 	</div>
 	<div class="everything">
 		<div class="filter">
-			<div class="filterButton" onclick="dropdown()">
-				<span>Filter by</span>
-				<img src="img/smallarrowdown.png">
-				<div class="dropdown">
-					<div class="usual">
-						<span>Price</span>
-						<img src="img/smallarrowdown.png">
-						<div class="priceslider">
-							<div class="priceline"><div class="priceline2"><div class="circle"></div><div class="circle"></div></div></div>
-						</div>
-					</div>
-					<div class="usual">
-						<span>Color</span>
-						<img src="img/smallarrowdown.png">
-						<div class="colorpicker">
-							<div class="greyishblue"></div>
-							<div class="darkblue"></div>
-							<div class="grey"></div>
-							<div class="black"></div>
-							<div class="bonewhite"></div>
-							<div class="lightblue"></div>
-						</div>
-					</div>
-					<div class="usual">
-						<span>Collection</span>
-						<img src="img/smallarrowdown.png">
-						<div class="collectionpicker">
-							<div class="collectioncolumn1">
-								<span>Casual</span>
-								<span>Classic</span>
-							</div>
-							<div class="collectioncolumn2">
-								<span>Petite</span>
-								<span>Soulluxe</span>
-							</div>
-						</div>
-					</div>
-					<div class="apply">
-						<span>Apply (9 products)</span>
-					</div>
-					<div class="clear">
-						<span>Clear all</span>
-					</div>
-					<script type="text/javascript">
-						function dropdown(){
-							document.getElementByClassName("filterButton").classList.toggle("show");
-						}
-					</script>
-				</div>
-			</div>
+			<a class="filterButton" href="#a"><span>Filter by</span><img src="img/smallarrowdown.png"></a>
+			<ul id="dropdown">
+				<li class="regular" id="price"><a href="#a">Price</a><img src="img/smallarrowdown.png">
+					<ul class="priceslider">
+						<li>
+							<div class="linegrey"></div>
+							<div class="lineblack"></div>
+						</li>
+						<li class="prices">
+							<span>$ 40</span>
+							<span>$ 240</span>
+						</li>
+					</ul>
+				</li>
+				<li class="regular" id="color"><a href="#a">Color</a><img src="img/smallarrowdown.png"></li>
+				<li class="regular" id="collection"><a href="#a">Collection</a><img src="img/smallarrowdown.png"></li>
+				<li class="apply"><a href="#a">Apply (9 products)</a></li>
+				<li class="clear"><a href="#a">Clear all</a></li>
+			</ul>
 		</div>
+		<script type="text/javascript">
+			$(function() {
+				var i = 0;
+				$('.filterButton').click(function() {
+					i++;
+					$(this).next('#dropdown').slideToggle();
+					$('#dropdown').css("display", "flex");
+					$('.filterButton img').css("transform", "rotate(180deg)");
+					$('.filterButton img').css("padding-left", "10%");
+					if (i % 2 == 0) {
+					$('.filterButton img').css("transform", "rotate(360deg)");
+					}
+				});
+				var p = 0;
+				$('#price').on("click", function() {
+					p++;
+					$('.priceslider').slideToggle();
+					$('.priceslider').css("display", "block");
+					$('#color').slideDown();
+					$('#dropdown #color').css("padding-top", "30%");
+					if (p % 2 == 0) {
+						$('#dropdown #color').css("padding-top", "0")
+					}
+				});
+			});
+	</script>
 		<div class="selection">
 			<div class="column1">
 				<div>

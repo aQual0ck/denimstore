@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	font-family: "Work Sans";
+}
+
+ul{
+	list-style: none;
+}
+
+.top{
+	width: 100%;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+}
+
+.top #menu{
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 30%;
+}
+
+.top #menu li{
+	display: inline-block;
+	padding-right: 10%;
+}
+
+.top #logo{
+	display: flex;
+	align-self: center;
+	width: 30%;
+	object-fit: scale-down;
+}
+
+.top .utils{
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: flex-end;
+}
+
+.top .utils img{
+	padding-right: 10%;
+}
