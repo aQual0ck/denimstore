@@ -150,18 +150,9 @@ ul{
 	border-top: none;
 	position: absolute;
 	top: 73.2%;
-	background: white;
+	background-color: white;
 	max-height: 1000px;
 	padding:0;
-}
-
-.everything .filter #dropdown li{
-	align-items: center;
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	height: 50px;
-	position: relative;
 }
 
 .everything .filter #dropdown .regular{
@@ -170,6 +161,11 @@ ul{
 	border-color: #cacacc;
 	font-weight: 550;
 	font-size: 20px;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	height: 50px;
+	position: relative;
 }
 
 .everything .filter #dropdown .regular a{
@@ -183,6 +179,7 @@ ul{
 	height: 90px;
 	background-color: black;
 	justify-content: center;
+	align-items: center;
 }
 
 .everything .filter #dropdown .apply a{
@@ -192,6 +189,8 @@ ul{
 }
 
 .everything .filter #dropdown .clear{
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	width:100%;
 	height: 90px;
@@ -219,15 +218,147 @@ ul{
 
 .everything .filter #dropdown #price .priceslider{
 	display: none;
-	width: 88%;
+	width: 100%;
 	height: 75px;
-	padding-bottom: 10%;
 	position: absolute;
-	margin-top: 47%;
+	margin-top: 50%;
+	margin-left: -15%;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
-.everything .filter #dropdown #price .priceslider .linegrey{
+.everything .filter #dropdown #price .priceslider .slidergrey{
+	width: 80%;
+	display: flex;
+	height: 5%;
+	background: #cacacc;
+	border-radius: 20px;
+}
 
+.everything .filter #dropdown #price .priceslider .sliderblack{
+	width: 60%;
+	height: 5%;
+	display: flex;
+	background: black;
+	border-radius: 20px;
+	margin-top: -3.5px;
+}
+
+.everything .filter #dropdown #price .priceslider .ball1{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: black;
+	margin-top: -3.5%;
+	margin-left: -60%;
+}
+
+.everything .filter #dropdown #price .priceslider .ball2{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: black;
+	margin-top: -5.75%;
+	margin-right: -60%;
+}
+
+.everything .filter #dropdown #price .priceslider .prices{
+	width: 100%;
+	display: flex;
+	padding-top: 5%;
+	justify-content: space-around;
+}
+
+.everything .filter #dropdown #color{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.everything .filter #dropdown #color .colorpicker{
+	display: none;
+	width: 88%;
+	height: 60px;
+	margin-top: 45%;
+	position: absolute;
+	justify-content: space-between;
+	margin-left: -5%;
+}
+
+.everything .filter #dropdown #color .colorpicker .bluishgrey{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #B0C3C7;
+}
+
+.everything .filter #dropdown #color .colorpicker .darkblue{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #3B6392;
+}
+
+.everything .filter #dropdown #color .colorpicker .darkgrey{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #BFC3C8;
+}
+
+.everything .filter #dropdown #color .colorpicker .black{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #2D2E2E;
+}
+
+.everything .filter #dropdown #color .colorpicker .grey{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #ECECEC;
+}
+
+.everything .filter #dropdown #color .colorpicker .lightblue{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #4193DA;
+}
+
+.everything .filter #dropdown #collection{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.everything .filter #dropdown #collection .collectionchoose{
+	display: none;
+	position: absolute;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	margin-top: 30%;
+	margin-left: -13%;
+	font-size: 16px;
+}
+
+.everything .filter #dropdown #collection .collectionchoose ul li{
+	color: #cacacc;
+}
+
+.everything .filter #dropdown #collection .collectionchoose .idk1 .choose{
+	color: black;
+}
+
+.everything .filter #dropdown #collection .collectionchoose .idk1 #pad{
+	padding-top: 30%;
+}
+
+.everything .filter #dropdown #collection .collectionchoose .idk2 #pad{
+	padding-top: 26%;
 }
 
 .everything .selection{
